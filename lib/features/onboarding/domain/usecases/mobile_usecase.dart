@@ -1,4 +1,4 @@
-import 'package:untitled1/features/onboarding/domain/repositories/OnboardingRepository.dart';
+import 'package:untitled1/features/onboarding/domain/repositories/onboarding_repository.dart';
 
 class MobileUsecase {
 

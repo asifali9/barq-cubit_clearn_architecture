@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled1/core/constants/app_colors.dart';
-import 'package:untitled1/features/dashboard/presentation/dashboard_cubit.dart';
 
 import 'mobile_screen.dart';
 import 'onboarding_cubit.dart';

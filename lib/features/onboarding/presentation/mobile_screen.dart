@@ -1,22 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/core/components/Images.dart';
-import 'package:untitled1/core/components/Texts.dart';
-import 'package:untitled1/core/components/TextFields.dart';
+import 'package:untitled1/core/components/images.dart';
+import 'package:untitled1/core/components/texts.dart';
+import 'package:untitled1/core/components/text_fields.dart';
 import 'package:untitled1/core/components/buttons.dart';
 import 'package:untitled1/core/constants/app_colors.dart';
 import 'package:untitled1/core/constants/app_strings.dart';
-import 'package:untitled1/core/components/BottomSheets.dart';
+import 'package:untitled1/core/components/bottom_sheets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:untitled1/core/local_storage/app_preferences.dart';
-
-import 'package:untitled1/features/onboarding/data/repositories/onboarding_repository_impl.dart';
-
-import '../../../core/network/dio_client.dart';
-import '../../../main.dart';
-import '../data/data_source/onboard_data_source_impl.dart';
-import '../data/data_source/onboard_local_data_source_impl.dart';
-import '../domain/usecases/mobile_usecase.dart';
-import '../domain/usecases/otp_usecase.dart';
 import 'onboarding_cubit.dart';
 import 'onboarding_state.dart';
 import 'otp_screen.dart';
@@ -49,9 +39,9 @@ class _MobileScreenState extends State<MobileScreen> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Image.asset("assets/ic_barq_logo.png", width: 100, height: 100),
-                AppText(text: AppStrings.welcome_to_barq_title),
+                AppText(text: AppStrings.welcomeToBarqTitle),
                 AppText(
-                  text: AppStrings.enter_mobile_title,
+                  text: AppStrings.enterMobileTitle,
                   fontSize: 13,
                   fontWeight: FontWeight.w400,
                 ),
@@ -114,16 +104,16 @@ class _MobileScreenState extends State<MobileScreen> {
                 ),
                 const SizedBox(height: 50),
                 AppText(
-                  text: AppStrings.agree_to_continue,
+                  text: AppStrings.agreeToContinue,
                   fontSize: 13,
-                  textColor: AppColors.text_gray,
+                  textColor: AppColors.textGray,
                   fontWeight: FontWeight.w400,
                 ),
 
                 AppText(
-                  text: AppStrings.terms_policy,
+                  text: AppStrings.termsPolicy,
                   fontSize: 13,
-                  textColor: AppColors.text_gray,
+                  textColor: AppColors.textGray,
                   fontWeight: FontWeight.w400,
                 ),
                 const Text.rich(TextSpan(children: [])),
@@ -146,7 +136,7 @@ class _MobileScreenState extends State<MobileScreen> {
                   },
                   builder: (context, state) {
                     return CustomButton(
-                      text: AppStrings.title_continue,
+                      text: AppStrings.titleContinue,
                       isLoading: state is OnboardingLoading, // Show spinner!
                       onPressed: () {
                         if (_formKey.currentState!.validate()) {

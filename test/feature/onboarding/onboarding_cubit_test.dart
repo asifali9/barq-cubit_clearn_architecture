@@ -1,7 +1,7 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:untitled1/features/onboarding/domain/repositories/OnboardingRepository.dart';
+import 'package:untitled1/features/onboarding/domain/repositories/onboarding_repository.dart';
 import 'package:untitled1/features/onboarding/domain/usecases/intro_usecase.dart';
 import 'package:untitled1/features/onboarding/domain/usecases/mobile_usecase.dart';
 import 'package:untitled1/features/onboarding/domain/usecases/otp_usecase.dart';

@@ -1,6 +1,6 @@
 import 'package:untitled1/features/onboarding/data/data_source/onboard_local_data_source.dart';
 import 'package:untitled1/features/onboarding/domain/entities/user_entity.dart';
-import 'package:untitled1/features/onboarding/domain/repositories/OnboardingRepository.dart';
+import 'package:untitled1/features/onboarding/domain/repositories/onboarding_repository.dart';
 
 import '../data_source/onboard_data_source.dart';
 

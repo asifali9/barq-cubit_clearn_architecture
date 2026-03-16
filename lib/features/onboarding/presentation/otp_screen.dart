@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
-import 'package:untitled1/core/components/Images.dart';
-import 'package:untitled1/core/components/Texts.dart';
+import 'package:untitled1/core/components/images.dart';
+import 'package:untitled1/core/components/texts.dart';
 import 'package:untitled1/core/constants/app_colors.dart';
 import 'package:untitled1/core/constants/app_strings.dart';
 
@@ -37,7 +37,7 @@ class _OtpScreenState extends State<OtpScreen> {
         color: Colors.black,
       ),
       decoration: BoxDecoration(
-        color: AppColors.otp_box,
+        color: AppColors.otpBox,
         borderRadius: BorderRadius.circular(8),
       ),
     );
@@ -76,9 +76,9 @@ class _OtpScreenState extends State<OtpScreen> {
               width: 100,
               height: 100,
             ),
-            AppText(text: AppStrings.enter_otp_title),
+            AppText(text: AppStrings.enterOtpTitle),
             AppText(
-              text: "${AppStrings.otp_sent_to} ${widget.phoneNumber}",
+              text: "${AppStrings.otpSentTo} ${widget.phoneNumber}",
               fontWeight: FontWeight.w400,
             ),
             const SizedBox(height: 50),
@@ -94,19 +94,18 @@ class _OtpScreenState extends State<OtpScreen> {
               ),
               onCompleted: (pin) {
                 // Logic when OTP is fully entered
-                print("Entered PIN: $pin");
                 Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen()));
               },
             ),
             const SizedBox(height: 100),
             AppText(
-              text: AppStrings.otp_not_received_title,
-              textColor: AppColors.text_gray,
+              text: AppStrings.otpNotReceivedTitle,
+              textColor: AppColors.textGray,
               fontWeight: FontWeight.w600,
               fontSize: 14,
             ),
             AppText(
-              text: AppStrings.resend_otp_,
+              text: AppStrings.resendOtp,
               fontWeight: FontWeight.w800,
               fontSize: 14,
             ),

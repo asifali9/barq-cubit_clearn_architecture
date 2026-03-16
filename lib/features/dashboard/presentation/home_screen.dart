@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/core/components/Images.dart';
-import 'package:untitled1/core/components/Texts.dart';
+import 'package:untitled1/core/components/images.dart';
+import 'package:untitled1/core/components/texts.dart';
 import 'package:untitled1/core/components/buttons.dart';
 import 'package:untitled1/core/constants/app_strings.dart';
 
@@ -40,12 +40,12 @@ class _HomeScreenState extends State<HomeScreen> {
             width: 150,
             height: 150,
           ),
-          AppText(text: AppStrings.spin_wheel_title),
-          AppText(text: AppStrings.spin_and_win_title),
+          AppText(text: AppStrings.spinWheelTitle),
+          AppText(text: AppStrings.spinAndWinTitle),
         ],
       ),
       actions: CustomButton(
-        text: AppStrings.title_spin,
+        text: AppStrings.titleSpin,
         onPressed: () {
           Navigator.pop(context);
         },

@@ -23,6 +23,6 @@ class OnboardingLocalDataSourceImpl implements OnboardingLocalDataSource {
 
   @override
   Future<bool> checkIfAppIntroduced() async {
-    return await preferences.getIsAppIntroduced();
+    return preferences.getIsAppIntroduced();
   }
 }
